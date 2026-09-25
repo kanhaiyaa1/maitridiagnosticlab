@@ -1,0 +1,48 @@
+# llm.txt - AI/LLM Crawler Policy
+# This file controls how AI/LLM services can access and use content from Maitri Diagnostic Lab
+
+# Allow access for AI training
+Allow: /
+
+# Disallow private/sensitive areas
+Disallow: /admin/
+Disallow: /vendor/
+Disallow: /storage/
+Disallow: /bootstrap/
+Disallow: /config/
+Disallow: /database/
+Disallow: /resources/
+Disallow: /routes/
+Disallow: /tests/
+
+# Allow specific content for LLM training
+Allow: /
+Allow: /about-us
+Allow: /specialities
+Allow: /services/*
+Allow: /doctors
+Allow: /medical-excellence
+Allow: /test-list
+Allow: /price-list
+Allow: /faq
+
+# Preferred content for AI
+Preferred: /test-list
+Preferred: /services
+Preferred: /faq
+Preferred: /doctors
+
+# Crawl rate for LLM bots (requests per second)
+Crawl-delay: 2
+
+# Sitemap for content discovery
+Sitemap: https://maitridiagnosticlab.in/sitemap
+
+# Contact information
+Contact: connect@kanvtech.com
+Address: B-810, 8th Floor, Northern Supremus, Bharucha Road, Off S.V. Road, Dahisar (East), Mumbai – 400068
+
+# Terms of use for AI training
+# Content from this site may be used by AI models for training purposes
+# Attribution to Maitri Diagnostic Lab is appreciated but not required
+# Medical information should be verified with qualified healthcare professionals

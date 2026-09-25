@@ -1,0 +1,25 @@
+# robots.txt for Maitri Diagnostic Lab
+# Allow all crawlers to index the site
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /vendor/
+Disallow: /storage/
+Disallow: /bootstrap/
+Disallow: /config/
+Disallow: /database/
+Disallow: /resources/
+Disallow: /routes/
+Disallow: /tests/
+Disallow: /*.php$
+Disallow: /?
+Disallow: /*?*
+Disallow: /*sort=
+Disallow: /*filter=
+
+# Crawl delay for all bots (in seconds)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://maitridiagnosticlab.in/sitemap
